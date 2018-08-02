@@ -5,9 +5,14 @@ Write a program that prints the number of times the string 'bob' occurs in s. Fo
 Number of times bob occurs is: 2'''
 
 def main():
+	s = raw_input()
 	#your code here
-	pass
-
+	cnt = 0
+	while "bob" in s:
+		cnt += 1
+		pos = s.find("bob")
+		s = s[pos:pos + 4]
+	print (cnt)
 
 if __name__== "__main__":
 	main()
