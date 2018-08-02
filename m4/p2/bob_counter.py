@@ -6,7 +6,8 @@ Number of times bob occurs is: 2'''
 
 def main():
 	#your code here
-		
+	pass
+
 
 if __name__== "__main__":
 	main()
