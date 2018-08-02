@@ -12,13 +12,13 @@ Note: This problem may be challenging. We encourage you to work smart. If you've
 
 def main():
 	string = raw_input()
-    curr, subs = '', ''
-    for char in string:
-        if not curr or char >= curr[-1]:
-            curr += char
-        else:
-            curr, subs = '', max(curr, subs, key=len)
-    print max(curr, subs, key=len)
+	curr, subs = '', ''
+	for char in string:
+		if not curr or char >= curr[-1]:
+			curr += char
+		else:
+			curr, subs = '', max(curr, subs, key=len)
+	print max(curr, subs, key=len)
 
 
 if __name__== "__main__":
