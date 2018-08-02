@@ -11,8 +11,15 @@ Longest substring in alphabetical order is: abc
 Note: This problem may be challenging. We encourage you to work smart. If you've spent more than a few hours on this problem, we suggest that you move on to a different part of the course. If you have time, come back to this problem after you've had a break and cleared your head.'''
 
 def main():
-	
-		
+	string = raw_input()
+    curr, subs = '', ''
+    for char in string:
+        if not curr or char >= curr[-1]:
+            curr += char
+        else:
+            curr, subs = '', max(curr, subs, key=len)
+    print max(curr, subs, key=len)
+
 
 if __name__== "__main__":
 	main()
