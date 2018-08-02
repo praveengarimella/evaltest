@@ -11,7 +11,7 @@ def main():
 	while "bob" in s:
 		cnt += 1
 		pos = s.find("bob")
-		s = s[pos + 3:]
+		s = s[pos + 2:]
 	print (cnt)
 
 if __name__== "__main__":
